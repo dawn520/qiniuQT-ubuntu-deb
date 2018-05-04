@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0.0
+Name=qiniuQT
+Comment=qiniu cross-platform gui base on QT5
+Exec=/usr/bin/qiniuQT/qiniuQT.sh
+keywords=qiniu,qiniuQT
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Utility;Application;
+Hidden=false
+Icon=/usr/share/pixmaps/qiniuQTLogo.png
+
+Name[zh_CN]=七牛上传工具

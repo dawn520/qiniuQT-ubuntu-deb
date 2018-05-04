@@ -1,0 +1,11 @@
+#在说脚本里面内容时，先告诉大家如何创建这个脚本，并使这个脚本具有个运行的权限
+touch postrm &&  chmod 755 postrm
+
+#下面是这个脚本的基本内容----一个例子
+#把之间安装在系统中的文件都给删除，就搞定了，
+
+echo "Start to remove"
+rm -rf  /usr/share/applications/qiniuQT.desktop
+rm -rf  /usr/share/pixmaps/qiniuQTLogo.png
+rm -rf  /usr/bin/qiniuQT 
+echo "Remove finished!

@@ -1,0 +1,11 @@
+Package: qiniuQT
+Version: 1.0.0-release
+Section: utils
+Priority: optional
+Depends:
+Suggests:
+Architecture: amd64
+Installed-Size: 20480
+Maintainer: dawn520
+Provides: bioinfoserv-arb
+Description: qiniu cross-platform gui base on QT5

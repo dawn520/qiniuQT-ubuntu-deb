@@ -1,0 +1,17 @@
+#在说脚本里面内容时，先告诉大家如何创建这个脚本，并使这个脚本具有个运行的权限
+touch postinst &&  chmod 755 postinst  
+
+#下面是这个脚本的基本内容----一个例子
+#可以看到就是一个基本的shell脚本，做了如下事情
+#1：告诉用户，安装过程中做了什么 echo命令显示 
+#2：把应用程序图标文件和.desktop文件 mv到对应的系统目录中 （注意使用的是/applicaton/lib 这种路径格式）
+#3：把可运行的Qt开发的程序，或其它二进行可运行程序（或其它库文件）复制到系统的path路径下
+#4：设置一些基本的用户环境变量 
+
+
+echo "Start to install"
+mv -f /usr/share/applications/qiniuQT.desktop /usr/share/applications/
+mv -f /usr/share/pixmaps/qiniuQTLogo.png /usr/share/pixmaps/
+mv -f /usr/bin/* /usr/bin/
+
+echo "Install ok"
